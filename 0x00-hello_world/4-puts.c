@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * main -Print a line of code using puts 
- *
- * Return: 0
- *
- */
+* main -Print a line of code using puts 
+*
+* Return: always return 0 (success)
+*
+*/
+
 int main(void)
 {
 
