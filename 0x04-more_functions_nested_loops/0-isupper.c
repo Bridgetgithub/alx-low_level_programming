@@ -2,9 +2,9 @@
 
 /**
 * _isupper - Checks for uppercase characters.
-* @c: The character to be checked.
+* @c: print int.
 *
-* Return: 1 if character is uppercase, 0 otherwise.
+* Return: 1 if character is uppercase, 0 otherwise
 */
 int _isupper(int c)
 {
