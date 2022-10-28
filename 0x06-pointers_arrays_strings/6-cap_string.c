@@ -1,34 +1,26 @@
 #include "main.h"
 
 /**
-* cap_string - capitalizes words
-* @str: string
-* Return: pointer to string
+* cap_string -> capitalizes function
+* @x: string param
+* Return: capitalized version of the string
 */
-char *cap_string(char *str)
+char *cap_string(char *x)
 {
-	int i = 0;
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	while (str[i])
+	while (x[a])
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
-		if (str[i - 1] == ' ' ||
-		    str[i - 1] == '\t' ||
-		    str[i - 1] == '\n' ||
-		    str[i - 1] == ',' ||
-		    str[i - 1] == ';' ||
-		    str[i - 1] == '.' ||
-		    str[i - 1] == '!' ||
-		    str[i - 1] == '?' ||
-		    str[i - 1] == '"' ||
-		    str[i - 1] == '(' ||
-		    str[i - 1] == ')' ||
-		    str[i - 1] == '{' ||
-		    str[i - 1] == '}' ||
-		    i == 0)
-			str[i] -= 32;
-
-		i++;
+		i = 0;
+		while (i < len)
+		{
+			if ((a == 0 '||' x[a - 1] == spc[i] && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
+		}
+		a++;
 	}
-	return (str);
+	return (x);
 }
